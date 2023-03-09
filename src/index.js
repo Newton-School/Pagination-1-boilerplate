@@ -2,7 +2,7 @@ const app = require('./app');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 const fs = require("fs");
-var products   =require("../models/product.js");
+const products   =require("../models/product.js");
 const products_data = JSON.parse(fs.readFileSync(`${__dirname}/../data/products.json`));
 
 dotenv.config();
