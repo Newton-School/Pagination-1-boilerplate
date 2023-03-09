@@ -8,7 +8,7 @@ const products_data = JSON.parse(fs.readFileSync(`${__dirname}/../data/products.
 dotenv.config();
 
 //connect to DB
-const url = process.env.DATABASE_URL || "mongodb://localhost/products";
+const url = process.env.DATABASE_URL || "mongodb://localhost:27017/products";
 mongoose.connect(url,{ useNewUrlParser: true, useUnifiedTopology: true }, () => {
     console.log('connected to DB')
 })

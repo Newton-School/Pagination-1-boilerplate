@@ -4,12 +4,6 @@ const mongoose = require('mongoose');
 const { off } = require('../models/product.js');
 var products   =require("../models/product.js");
 
-//connect to DB
-const url = process.env.DATABASE_URL || "mongodb://localhost/products";
-mongoose.connect(url,{ useNewUrlParser: true, useUnifiedTopology: true }, () => {
-    console.log('connected to DB')
-})
-
 
 // Import routes
 
